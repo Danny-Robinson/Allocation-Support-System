@@ -1,0 +1,966 @@
+ /* TEMPLATE */
+
+
+
+HTML {
+
+	height:100%;
+
+	margin:0;
+
+	padding:0;
+
+	font-family:Verdana;
+
+	color:rgb(30,30,30);
+
+}
+
+
+
+body {
+
+	height:100%;
+
+	margin:0;
+
+	padding:0;
+
+	background-color:orange;
+
+	min-width:600px;
+
+}
+
+
+
+.Menu {
+
+	height:100%;
+
+	width:100px;
+
+	background-color:rgb(245,245,245);
+
+	float:left;
+
+	padding-bottom:102px;
+
+	padding-left:5px;
+
+	padding-top:10px;
+
+	margin-top:-10px;
+
+	border-right-style:solid;
+
+	border-right-color:rgb(30,30,30);
+
+	position:fixed;
+
+}
+
+
+
+.Menu nav{
+
+	position:fixed;
+
+}
+
+
+
+.Menu ul{
+
+	list-style-type:none;
+
+	margin-left:-40px;
+
+	margin-top:40px;
+
+}
+
+
+
+.Menu li{
+
+	border-style:solid;
+
+	border-color:rgb(30,30,30);
+
+	border-radius:15px;
+
+	width:90px;
+
+	height:20px;
+
+	text-align:center;
+
+	padding-top:5px;
+
+	padding-bottom:5px;
+
+	margin-top:10px;
+
+	transition:height 0.5s, line-height 0.5s;
+
+	line-height:20px;
+
+	vertical-align:middle;
+
+}
+
+.Menu li img {
+
+	height:22px;
+	width:75px;
+	padding-top:0px;
+	padding-bottom:0px;
+	transition:padding-top 0.5s, padding-bottom 0.5s;
+
+}
+
+
+
+.Menu li:hover{
+
+	height:30px;
+
+	line-height:30px;
+
+}
+
+.Menu li:hover img{
+
+	padding-top:5px;
+	padding-bottom:5px;
+
+}
+
+
+
+.Header {
+
+	background-color:rgb(245,245,245);
+
+	margin-left:115px;
+
+	height:50px;
+
+	border-radius:30px;
+
+	margin-right:10px;
+
+	padding-left:10px;
+
+	margin-top:10px;
+
+	text-align:center;
+
+	font-size:25pt;
+
+	font-weight:bold;
+
+	border-style:solid;
+
+	border-color:rgb(30,30,30);
+
+}
+
+
+
+.Main{
+
+	background-color:rgb(245,245,245);
+
+	margin-top:10px;
+
+	height:100%;
+
+	min-width:400px;
+
+	margin-left:115px;
+
+	border-radius:30px;
+
+	margin-right:10px;
+
+	padding-top:10px;
+
+	padding-left:10px;
+
+	padding-right:10px;
+
+	padding-bottom:10px;
+
+	margin-bottom:10px;
+
+	border-style:solid;
+
+	border-color:rgb(30,30,30);
+
+	overflow:hidden;
+
+}
+
+
+
+.Content{
+
+	overflow:auto;
+
+	height:100%;
+
+}
+
+
+
+#logo{
+
+	display:block;
+
+	margin-left:25px;
+
+}
+
+
+
+ /* TABLES (GENERAL)*/
+
+
+
+table{
+
+	border-collapse:collapse;
+
+	border:solid rgb(30,30,30);
+
+	width:100%;
+
+}
+
+
+
+th{
+
+	border-bottom:solid rgb(30,30,30);
+
+	border-right:2px solid rgb(30,30,30);
+
+	padding:5px;
+
+}
+
+
+
+tr:nth-child(even){
+
+	background-color:rgb(200,200,200);
+
+}
+
+
+
+tr:nth-child(n+2){
+
+	transition:background-color 0.75s, color 0.75s;
+
+}
+
+
+
+tr:nth-child(n+2):hover{
+
+	background-color:rgb(30,30,30);
+
+	color:rgb(245,245,245);
+
+}
+
+
+
+td{
+
+	text-align:center;
+
+	border-right:2px solid rgb(30,30,30);
+
+}
+
+
+
+ /* FORMS */
+
+
+
+form{
+
+	border:3px double rgb(150,150,150);
+
+	width:1000px;
+
+	margin-left:50px;
+
+	padding:10px;
+
+	border-radius:30px;
+
+	background-color:rgb(256,256,200);
+
+	overflow:auto;
+
+}
+
+
+
+form label{
+
+	float:left;
+
+	width:200px;
+
+}
+
+
+
+form select{
+
+	border:2px solid rgb(30,30,30);
+
+	width:215px;
+
+	padding:5px;
+
+	background-color:rgb(245,245,245);
+
+	float:left;
+
+}
+
+
+
+form input{
+
+	width:200px;
+
+	border:2px solid rgb(30,30,30);
+
+	background-color:rgb(245,245,245);
+
+	padding:5px;
+
+	float:left;
+
+	margin-right:20px;
+
+}
+
+
+
+form input[type=submit]{
+
+	width:100px;
+
+	height:50px;
+
+	border-radius:10px;
+
+	border:2px solid rgb(30,30,30);
+
+	font-size:15pt;
+
+	margin-left:50px;
+
+	margin-right:0px;
+
+	transition:width 0.5s, margin-left 0.5s, margin-right 0.5s;
+
+}
+
+
+
+form input[type=reset]{
+
+	width:100px;
+
+	height:50px;
+
+	border-radius:10px;
+
+	font-size:15pt;
+
+	margin-left:50px;
+
+	margin-right:0px;
+
+	border:2px solid rgb(30,30,30);
+
+	transition:width 0.5s, margin-left 0.5s, margin-right 0.5s;
+
+}
+
+
+
+form input[type=submit]:hover{
+
+	width:140px;
+
+	margin-left:30px;
+
+	margin-right:-20px;
+
+}
+
+
+
+form input[type=reset]:hover{
+
+	width:140px;
+
+	margin-left:30px;
+
+	margin-right:-20px;
+
+}
+
+
+
+form input:focus{
+
+	border:2px solid orange;
+
+}
+
+
+
+form select:focus{
+
+	border:2px solid orange;
+
+}
+
+.NarrowForm {
+
+	width:400px;
+	
+}
+
+textarea {
+
+	resize:none;
+	
+}
+
+.weekSelect input[type=checkbox]{
+	display:none;
+}
+
+.weekSelect input[type=checkbox] + label{
+	border:solid 3px rgb(30,30,30);
+	padding:5px;
+	border-radius:17px;
+	background-color:rgb(245,245,245);
+	transition:border .5s, background-color .5s, color .5s;
+	width:500px;
+	margin-left:50px;
+}
+
+.weekSelect input[type=checkbox]:checked + label {
+	border:solid 3px orange;
+	background-color:rgb(0,0,100);
+	color:white;
+}
+
+#labBox input[type=checkbox] + label span {
+}
+
+#labBox input[type=checkbox]:checked + label span {
+	display:none;
+}
+
+ /* TABLES CONT. (TIMETABLES) */
+
+
+
+.TimeView td{
+
+	padding-top:15px;
+
+	padding-bottom:15px;
+
+}
+
+
+
+.TimeView  tr{
+
+	background-color:rgb(245,245,245);
+
+	border-top: 2px solid rgb(30,30,30);
+
+}
+
+
+
+.TimeView tr:hover{
+
+	background-color:rgb(245,245,245);
+
+	color:rgb(30,30,30);
+
+}
+
+
+
+.TimeView{
+
+	width:80%;
+
+	margin:0 auto;
+
+}
+
+
+
+ /* TABLES CONT. (AVALIABLE SLOTS) */
+
+	
+
+.TimeView td input[type=checkbox]{ 
+
+	display:none;
+
+}
+
+
+
+.TimeView td input[type=checkbox] + label {
+
+	background-color:green;
+
+	display:inline-block;
+
+	width:70px;
+
+	height:30px;
+
+	border-radius:5px;
+
+	border:solid 1px black;
+
+}
+
+
+
+.TimeView td input[type=checkbox]:checked + label {
+
+	background-color:red;
+
+}
+
+
+
+ /* POP-UP MESSAGES */
+
+
+
+.popup{
+
+	display:block;
+
+	position:absolute;
+
+	bottom:20px;
+
+	left:-350px;
+
+	width:300px;
+
+	height:200px;
+
+	overflow:hidden;
+
+	padding:10px;
+
+	border-radius:15px;
+
+	transition:left 0.3s;
+
+	border:10px solid rgb(30,30,30);
+
+	background-color:rgb(245,245,245);
+
+	opacity:0.9;
+
+}
+
+
+
+.popup p{
+
+	vertical-align:middle;
+
+}
+
+
+
+.popup-trigger:hover .popup{
+
+	left:20px;
+
+}
+
+
+
+/* LINKS */
+
+
+
+a:visited {
+
+	text-decoration:none;
+
+	color:rgb(30,30,30);
+
+	transition:color 0.3s;
+
+}
+
+
+
+a:active {
+
+	text-decoration:none;
+
+	color:rgb(30,30,30);
+
+	transition:color 0.3s;
+
+}
+
+
+
+a:link {
+
+	text-decoration:none;
+
+	color:rgb(30,30,30);
+
+	transition:color 0.3s;
+
+}
+
+
+
+a:hover {
+
+	color:orange;
+
+}
+
+
+
+
+ /* ERROR MESSAGES */
+ 
+ 
+
+.error {
+	
+	color:#F00;
+	
+	font-size:11pt;
+
+	font-weight:bold;
+	
+}
+
+.info {
+	
+	color:#90F;
+	
+	font-size:11pt;
+		
+	font-weight:bold;
+	
+}
+
+
+
+
+ /* 3-COLUMN VIEW */
+
+
+#left_column {
+	
+	float: left;
+	
+	min-width: 350px;
+	
+	padding: 15px;
+}
+
+#column_container {
+	
+	float: left;
+	
+	min-width: 700px;
+	
+	padding: 0px;
+	
+	margin: 0px auto;
+	
+}
+
+#center_column {
+	
+	width: 350px;
+	
+	padding: 15px;
+	
+	float: left;
+	
+	overflow: visible;
+	
+}
+
+#right_column {
+	
+	float: right;
+	
+	width: 200px;
+	
+	padding: 15px;
+	
+	overflow:visible;
+
+}
+
+
+
+/* BUTTON */
+
+
+input[type=button]{
+
+	width:290px;
+
+	height:50px;
+
+	border-radius:10px;
+
+	border:2px solid rgb(30,30,30);
+
+	font-size:15pt;
+
+	margin-left:50px;
+
+	margin-right:0px;
+
+	transition:width 0.5s, margin-left 0.5s, margin-right 0.5s;
+	
+
+}
+
+
+
+input[type=button]:hover{
+
+	width:330px;
+
+	margin-left:30px;
+
+	margin-right:-20px;
+	
+
+}
+
+
+
+
+
+
+/* UPDATE SINGLE RECORD */
+
+
+
+.update { 
+
+  	position: relative;
+	
+}
+
+
+
+.update form { 
+
+	height:250px;
+
+}
+
+.update form input[type=submit] { 
+
+
+  	position: absolute;
+		
+  	top: 70%; 
+	
+  	left: 38%;
+	
+}
+
+
+
+
+
+/* UPDATE MULTIPLE RECORDS */
+
+
+
+.update_multi { 
+
+  	position: relative;
+	
+}
+
+
+
+.update_multi form { 
+
+	height:810px;
+
+}
+
+.update_multi form input[type=submit] { 
+
+
+  	position: absolute;
+		
+  	top: 91%; 
+	
+  	left: 38%;
+	
+}
+
+
+
+
+/* EXPANDING BLOCK http://jsfiddle.net/ExplosionPIlls/6sj4e/ */
+
+
+.expand {
+	
+	border-top:dotted;
+	
+	border-color:orange;
+	
+    height: 0px;
+	
+    overflow: hidden;
+
+}
+
+.container {
+	
+    position: relative;
+
+}
+
+.expand_label {
+	
+    position: absolute;
+	
+    top: 100%;
+	
+}
+
+.expand_input {
+	
+    display: none;
+	
+}
+
+.expand_label:after {
+	
+	font-size:9pt;
+	
+	color:red;
+	
+	text-decoration: underline;
+	
+    content:"Module is not listed? \A Click to add a new module \A ";
+	
+	white-space: pre;
+	
+}
+
+.expand_input:checked + .expand_label:after {
+	
+    content: "Click to close new module menu";
+	
+}
+
+.expand_input:checked ~ div {
+	
+    height: 100%;
+	
+}
+
+
+
+
+
+
+td.greenSlot{
+	
+	background:#02DB04;
+	
+	padding-top:15px;
+	
+	padding-bottom:15px;
+	
+}
+
+
+td.redSlot{
+	
+    background: red;
+	
+}
+
+
+
+
+
+
+/* NOSCRIPT WARNING*/
+
+.noScript {
+
+	background-color:rgb(245,70,50);
+	
+	color:rgb(245,245,245);
+
+	margin-left:115px;
+
+	height:50px;
+
+	border-radius:30px;
+
+	margin-right:10px;
+
+	padding-left:10px;
+
+	margin-top:10px;
+
+	text-align:center;
+
+	font-size:20pt;
+
+	font-weight:bold;
+
+	border-style:solid;
+
+	border-color:rgb(30,30,30);
+
+}
