@@ -1,0 +1,7 @@
+ACCESS DENIED
+<br>You do not have permision to view this page.
+<br>If you were logged on your session may have expired and you will need to log on again.
+<br>If you were attempting to log in you may have entered an incorrect username and/or password. Use your browsers back button to try again.
+<br>Continued bad attempts will be investigated.
+<br>Your IP: <!--#echo var="REMOTE_ADDR" -->
+<br>Your browser: <!--#echo var="HTTP_USER_AGENT" -->
